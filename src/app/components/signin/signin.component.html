@@ -1,0 +1,10 @@
+<div id="signinComponent" class="text-center">
+  <form class="form-signin" [formGroup]="signinForm" (ngSubmit)="signin()">
+    <h1 class="h3 mb-3 font-weight-normal">Please signin</h1>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" formControlName="username">
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" formControlName="password">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  </form>
+</div>
